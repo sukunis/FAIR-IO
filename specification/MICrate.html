@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>MICrate Profile &#8212; NFDI4BioImage FAIR-IO</title>
+    <title>RO-Crate Bioimaging profile (detached) &#8212; NFDI4BioImage FAIR-IO</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,6 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'specification/MICrate';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tools" href="../tools/index.html" />
+    <link rel="prev" title="RO-Crate" href="ro-crate.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="2026-02-16"/>
@@ -123,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -181,8 +181,19 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Specifications</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="index.html">What is a FAIR-IO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ro-crate.html">RO-Crate</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">RO-Crate Bioimaging profile (detached)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Usage</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tools/index.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guidelines/index.html">Guidelines</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-Cases</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/index.html">Community/ Use-Cases</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contributing</span></p>
 <ul class="nav bd-sidenav">
@@ -374,7 +385,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>MICrate Profile</h1>
+    <h1>RO-Crate Bioimaging profile (detached)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -403,15 +414,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="micrate-profile">
-<h1>MICrate Profile<a class="headerlink" href="#micrate-profile" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="ro-crate-bioimaging-profile-detached">
+<h1>RO-Crate Bioimaging profile (detached)<a class="headerlink" href="#ro-crate-bioimaging-profile-detached" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p>Version v1_1.0.0-draft</p></li>
-<li><p>detached RO-Crate</p></li>
+<li><p>follow up on <a class="reference external" href="https://github.com/ome/ome2024-ngff-challenge/blob/42f710bc6b456a0b6e31f431c8283fdd670046b5/dev3/2024-07-02/ro-crate-metadata-proposal.md">ro-crate bioimaging minimal design</a></p></li>
+<li><p>Version v1.0.0-draft</p></li>
+<li><p><strong>detached</strong> RO-Crate</p></li>
 <li><p>Authors: Susanne Kunis</p></li>
 </ul>
 <section id="specification">
 <h2>Specification<a class="headerlink" href="#specification" title="Link to this heading">#</a></h2>
+<p><img alt="Detached Ro-Crate" src="../_images/ro-crate_detached_v1.0.0.png" /></p>
 <section id="ro-crate-metadata-descriptor">
 <h3>RO-Crate Metadata Descriptor<a class="headerlink" href="#ro-crate-metadata-descriptor" title="Link to this heading">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -491,7 +504,11 @@ of how the RO-Crate may be used</em>]</p></li>
 </section>
 <section id="minimal-example">
 <h2>Minimal example<a class="headerlink" href="#minimal-example" title="Link to this heading">#</a></h2>
-<p>see <a class="reference download internal" download="" href="../_downloads/c883f04234b8e27f2d93a03d7abc65fb/mic-ro-crate-metadata.json"><span class="xref download myst">mic-ro-crate-metadata.json</span></a> open in <a class="reference external" href="https://json-ld.org/playground/#startTab=tab-expanded&amp;amp;json-ld=%7B%22%40context%22%3A%5B%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.1%2Fcontext%22%2C%7B%22organism_classification%22%3A%22https%3A%2F%2Fschema.org%2FtaxonomicRange%22%2C%22obo%22%3A%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2F%22%2C%22acquisiton_method%22%3A%7B%22%40reverse%22%3A%22https%3A%2F%2Fschema.org%2Fresult%22%2C%22%40type%22%3A%22%40id%22%7D%2C%22biosample%22%3A%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002648%22%2C%22specimen%22%3A%22https%3A%2F%2Fschema.org%2Fabout%22%7D%5D%2C%22%40graph%22%3A%5B%7B%22%40id%22%3A%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%2C%22%40type%22%3A%22Dataset%22%2C%22name%22%3A%22Calcium%20wave%20dynamics%22%2C%22description%22%3A%22Time%20lapse%20image%20of%20whole%20leaves%20expressing%20calcium%20and%20glutamate%20responses%22%2C%22license%22%3A%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F4.0%2F%22%2C%22acquisition_method%22%3A%7B%22%40id%22%3A%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%7D%2C%22specimen%22%3A%7B%22%40id%22%3A%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%7D%2C%22hasPart%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fuk1s3.embassy.ebi.ac.uk%2Febi-ngff-challenge-2024%2Fc0e5d621-62cc-43a6-9dad-2ddab8959d17.zarr%2Fzarr.json%22%7D%7D%2C%7B%22%40id%22%3A%22ro-crate-metadata.json%22%2C%22%40type%22%3A%22CreativeWork%22%2C%22conformsTo%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.2-DRAFT%22%7D%2C%22about%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%7D%7D%2C%7B%22%40id%22%3A%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%2C%22%40type%22%3A%22BioChemEntity%22%2C%22additionalType%22%3A%22biosample%22%2C%22organism_classification%22%3A%7B%22%40id%22%3A%22NCBI%3Atxid3701%22%7D%7D%2C%7B%22%40id%22%3A%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%2C%22%40type%22%3A%22obo%3AFBbi_00000251%22%2C%22name%22%3A%22confocal%20microscopy%22%7D%5D%7D">JSON-LD Playground</a></p>
+<p>see <a class="reference download internal" download="" href="../_downloads/c883f04234b8e27f2d93a03d7abc65fb/mic-ro-crate-metadata.json"><span class="xref download myst">mic-ro-crate-metadata.json</span></a> open in</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://arunaengine.github.io/ro-crate-explorer/?crate=%7B%0A++%22%40context%22%3A+%5B%0A++++%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.1%2Fcontext%22%2C%0A++++%7B%0A++++++%22organism_classification%22%3A+%22https%3A%2F%2Fschema.org%2FtaxonomicRange%22%2C%0A++++++%22obo%22%3A+%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2F%22%2C%0A++++++%22acquisiton_method%22%3A+%7B%0A++++++++%22%40reverse%22%3A+%22https%3A%2F%2Fschema.org%2Fresult%22%2C%0A++++++++%22%40type%22%3A+%22%40id%22%0A++++++%7D%2C%0A++++++%22biosample%22%3A+%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002648%22%2C%0A++++++%22specimen%22%3A+%22https%3A%2F%2Fschema.org%2Fabout%22%0A++++%7D%0A++%5D%2C%0A++%22%40graph%22%3A+%5B%0A++++%7B%0A++++++%22%40id%22%3A+%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%2C%0A++++++%22%40type%22%3A+%22Dataset%22%2C%0A++++++%22name%22%3A+%22Calcium+wave+dynamics%22%2C%0A++++++%22description%22%3A+%22Time+lapse+image+of+whole+leaves+expressing+calcium+and+glutamate+responses%22%2C%0A++++++%22license%22%3A+%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F4.0%2F%22%2C%0A++++++%22acquisition_method%22%3A+%7B%0A++++++++%22%40id%22%3A+%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%0A++++++%7D%2C%0A++++++%22specimen%22%3A+%7B%0A++++++++%22%40id%22%3A+%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%0A++++++%7D%2C%0A++++++%22hasPart%22%3A+%7B%0A++++++++%22%40id%22%3A+%22https%3A%2F%2Fuk1s3.embassy.ebi.ac.uk%2Febi-ngff-challenge-2024%2Fc0e5d621-62cc-43a6-9dad-2ddab8959d17.zarr%2Fzarr.json%22%0A++++++%7D%0A++++%7D%2C%0A++++%7B%0A++++++%22%40id%22%3A+%22ro-crate-metadata.json%22%2C%0A++++++%22%40type%22%3A+%22CreativeWork%22%2C%0A++++++%22conformsTo%22%3A+%7B%0A++++++++%22%40id%22%3A+%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.2-DRAFT%22%0A++++++%7D%2C%0A++++++%22about%22%3A+%7B%0A++++++++%22%40id%22%3A+%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%0A++++++%7D%0A++++%7D%2C%0A++++%7B%0A++++++%22%40id%22%3A+%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%2C%0A++++++%22%40type%22%3A+%22BioChemEntity%22%2C%0A++++++%22additionalType%22%3A+%22biosample%22%2C%0A++++++%22organism_classification%22%3A+%7B%0A++++++++%22%40id%22%3A+%22NCBI%3Atxid3701%22%0A++++++%7D%0A++++%7D%2C%0A++++%7B%0A++++++%22%40id%22%3A+%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%2C%0A++++++%22%40type%22%3A+%22obo%3AFBbi_00000251%22%2C%0A++++++%22name%22%3A+%22confocal+microscopy%22%0A++++%7D%0A++%5D%0A%7D">RO-Crate Explorer</a></p></li>
+<li><p><a class="reference external" href="https://json-ld.org/playground/#startTab=tab-expanded&amp;amp;json-ld=%7B%22%40context%22%3A%5B%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.1%2Fcontext%22%2C%7B%22organism_classification%22%3A%22https%3A%2F%2Fschema.org%2FtaxonomicRange%22%2C%22obo%22%3A%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2F%22%2C%22acquisiton_method%22%3A%7B%22%40reverse%22%3A%22https%3A%2F%2Fschema.org%2Fresult%22%2C%22%40type%22%3A%22%40id%22%7D%2C%22biosample%22%3A%22http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002648%22%2C%22specimen%22%3A%22https%3A%2F%2Fschema.org%2Fabout%22%7D%5D%2C%22%40graph%22%3A%5B%7B%22%40id%22%3A%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%2C%22%40type%22%3A%22Dataset%22%2C%22name%22%3A%22Calcium%20wave%20dynamics%22%2C%22description%22%3A%22Time%20lapse%20image%20of%20whole%20leaves%20expressing%20calcium%20and%20glutamate%20responses%22%2C%22license%22%3A%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F4.0%2F%22%2C%22acquisition_method%22%3A%7B%22%40id%22%3A%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%7D%2C%22specimen%22%3A%7B%22%40id%22%3A%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%7D%2C%22hasPart%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fuk1s3.embassy.ebi.ac.uk%2Febi-ngff-challenge-2024%2Fc0e5d621-62cc-43a6-9dad-2ddab8959d17.zarr%2Fzarr.json%22%7D%7D%2C%7B%22%40id%22%3A%22ro-crate-metadata.json%22%2C%22%40type%22%3A%22CreativeWork%22%2C%22conformsTo%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fw3id.org%2Fro%2Fcrate%2F1.2-DRAFT%22%7D%2C%22about%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fwww.ebi.ac.uk%2Fbiostudies%2Fbioimages%2Fstudies%2FS-BIAD464%22%7D%7D%2C%7B%22%40id%22%3A%22%2353ce45ab-62a5-4c9d-afbd-bb8fe572e001%22%2C%22%40type%22%3A%22BioChemEntity%22%2C%22additionalType%22%3A%22biosample%22%2C%22organism_classification%22%3A%7B%22%40id%22%3A%22NCBI%3Atxid3701%22%7D%7D%2C%7B%22%40id%22%3A%22%2325173e15-dd40-4287-a35c-c234ba1d366e%22%2C%22%40type%22%3A%22obo%3AFBbi_00000251%22%2C%22name%22%3A%22confocal%20microscopy%22%7D%5D%7D">JSON-LD Playground</a></p></li>
+</ul>
 </section>
 </section>
 
@@ -525,6 +542,24 @@ of how the RO-Crate may be used</em>]</p></li>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="ro-crate.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">RO-Crate</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../tools/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tools</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

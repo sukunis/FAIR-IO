@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; NFDI4BioImage FAIR-IO</title>
+    <title>Guidelines &#8212; NFDI4BioImage FAIR-IO</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'guidelines/index';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="../use-cases/index.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="../tools/index.html" />
+    <link rel="next" title="Community/ Use-Cases" href="../use-cases/index.html" />
+    <link rel="prev" title="Tools" href="../tools/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="2026-02-16"/>
@@ -183,6 +183,17 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Specifications</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../specification/index.html">What is a FAIR-IO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specification/ro-crate.html">RO-Crate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specification/MICrate.html">RO-Crate Bioimaging profile (detached)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Usage</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tools/index.html">Tools</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Guidelines</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-Cases</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/index.html">Community/ Use-Cases</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contributing</span></p>
 <ul class="nav bd-sidenav">
@@ -374,7 +385,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Guidelines</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,9 +394,12 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#which-type-of-ro-crate-should-i-use-attache-or-detached">Which type of RO-Crate should I use (attache or detached)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-checklist-are-you-building-the-right-type">Quick checklist – are you building the right type?</a></li>
 </ul>
-
+</li>
+</ul>
             </nav>
         </div>
     </div>
@@ -396,7 +410,31 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  
+  <section class="tex2jax_ignore mathjax_ignore" id="guidelines">
+<h1>Guidelines<a class="headerlink" href="#guidelines" title="Link to this heading">#</a></h1>
+<section id="which-type-of-ro-crate-should-i-use-attache-or-detached">
+<h2>Which type of RO-Crate should I use (attache or detached)<a class="headerlink" href="#which-type-of-ro-crate-should-i-use-attache-or-detached" title="Link to this heading">#</a></h2>
+<section id="quick-checklist-are-you-building-the-right-type">
+<h3>Quick checklist – are you building the right type?<a class="headerlink" href="#quick-checklist-are-you-building-the-right-type" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Do you know the total size of the files?
+&lt; 5 GB → attached is fine.
+&gt; 5 GB → think detached.</p></li>
+<li><p>Do you control the licence of the files?
+Yes, you can share them → attached.
+No, you can only provide a citation → detached.</p></li>
+<li><p>Will the data ever be updated?
+No, it’s a static snapshot → attached.
+Yes, you’ll keep a “live” version → detached.</p></li>
+<li><p>Do you need an easy, single‑file transfer?
+Yes → attached.
+No, you’re fine with a list of URLs → detached.</p></li>
+</ol>
+<p>If you answer “yes” to 1–3, go with attached; otherwise, go detached.</p>
+</section>
+</section>
+</section>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -433,7 +471,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Tools</p>
       </div>
     </a>
     <a class="right-next"
@@ -441,7 +479,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Community/ Use-Cases</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -460,9 +498,12 @@ document.write(`
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#which-type-of-ro-crate-should-i-use-attache-or-detached">Which type of RO-Crate should I use (attache or detached)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-checklist-are-you-building-the-right-type">Quick checklist – are you building the right type?</a></li>
 </ul>
-
+</li>
+</ul>
   </nav></div>
 
 </div></div>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; NFDI4BioImage FAIR-IO</title>
+    <title>Tools &#8212; NFDI4BioImage FAIR-IO</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'tools/index';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="../guidelines/index.html" />
-    <link rel="prev" title="What is a FAIR-IO" href="../specification/index.html" />
+    <link rel="next" title="Guidelines" href="../guidelines/index.html" />
+    <link rel="prev" title="RO-Crate Bioimaging profile (detached)" href="../specification/MICrate.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="2026-02-16"/>
@@ -183,6 +183,17 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Specifications</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../specification/index.html">What is a FAIR-IO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specification/ro-crate.html">RO-Crate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specification/MICrate.html">RO-Crate Bioimaging profile (detached)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Usage</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guidelines/index.html">Guidelines</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-Cases</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/index.html">Community/ Use-Cases</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contributing</span></p>
 <ul class="nav bd-sidenav">
@@ -361,9 +372,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -374,19 +383,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Tools</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -396,7 +397,20 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  
+  <section class="tex2jax_ignore mathjax_ignore" id="tools">
+<h1>Tools<a class="headerlink" href="#tools" title="Link to this heading">#</a></h1>
+<p>Overview of software, libraries, and CLI tools that generate, read, or convert FAIR-IO or its components.</p>
+<ul class="simple">
+<li><p><strong>NGFF-Converter</strong></p></li>
+<li><p><a class="reference external" href="https://ome.github.io/ome-ngff-validator/"><strong>OME-NGFF-Validator</strong></a> validates OME-Zarr v.0.5 files containing ro-crate-metadata.json.</p></li>
+<li><p><a class="reference external" href="https://github.com/ome/omero-cli-transfer"><strong>omero-cli-transfer</strong></a>, which allows export of OMERO image data compliant with RO-Crate</p></li>
+<li><p><a class="reference external" href="https://github.com/German-BioImaging/omero-rdf"><strong>omero-rdf</strong></a>, allows you to export RDF from OMERO</p></li>
+<li><p><a class="reference internal" href="#"><span class="xref myst"><strong>omero-arc</strong></span></a></p></li>
+<li><p><a class="reference internal" href="#"><span class="xref myst"><strong>OMERO.forms</strong></span></a></p></li>
+<li><p>[<strong>RO-Crate Viewer</strong>]((<a class="reference external" href="https://arunaengine.github.io/ro-crate-explorer/">https://arunaengine.github.io/ro-crate-explorer/</a>) for exploring and visualizing RO-Crates (<a class="reference external" href="https://github.com/arunaengine/ro-crate-explorer">github</a></p></li>
+</ul>
+</section>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -428,12 +442,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../specification/index.html"
+       href="../specification/MICrate.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">What is a FAIR-IO</p>
+        <p class="prev-next-title">RO-Crate Bioimaging profile (detached)</p>
       </div>
     </a>
     <a class="right-next"
@@ -441,7 +455,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Guidelines</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -451,21 +465,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
