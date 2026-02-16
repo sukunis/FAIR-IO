@@ -1,0 +1,52 @@
+{
+    "@context": [
+      "https://w3id.org/ro/crate/1.1/context",
+      {
+        "organism_classification": "https://schema.org/taxonomicRange",
+        "obo": "http://purl.obolibrary.org/obo/",
+        "acquisiton_method": {
+          "@reverse": "https://schema.org/result",
+          "@type": "@id"
+        },
+        "biosample": "http://purl.obolibrary.org/obo/OBI_0002648",
+        "specimen":"https://schema.org/about"
+      }
+    ],
+    "@graph": [
+      {
+        "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD464",
+        "@type": "Dataset",
+        "name": "Calcium wave dynamics",
+        "description": "Time lapse image of whole leaves expressing calcium and glutamate responses",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "acquisition_method": {
+          "@id": "#25173e15-dd40-4287-a35c-c234ba1d366e"
+        },
+        "specimen":{"@id":"#53ce45ab-62a5-4c9d-afbd-bb8fe572e001"},
+        "hasPart":{"@id":"https://uk1s3.embassy.ebi.ac.uk/ebi-ngff-challenge-2024/c0e5d621-62cc-43a6-9dad-2ddab8959d17.zarr/zarr.json"}
+      },
+      {
+        "@id": "ro-crate-metadata.json",
+        "@type": "CreativeWork",
+        "conformsTo": {
+          "@id": "https://w3id.org/ro/crate/1.2-DRAFT"
+        },
+        "about": {
+          "@id": "https://www.ebi.ac.uk/biostudies/bioimages/studies/S-BIAD464"
+        }
+      },
+      {
+        "@id": "#53ce45ab-62a5-4c9d-afbd-bb8fe572e001",
+        "@type": "BioChemEntity",
+        "additionalType":"biosample",
+        "organism_classification": {
+          "@id": "NCBI:txid3701"
+        }
+      },
+      {
+        "@id": "#25173e15-dd40-4287-a35c-c234ba1d366e",
+        "@type": "obo:FBbi_00000251",
+        "name": "confocal microscopy"
+      }
+    ]
+  }
